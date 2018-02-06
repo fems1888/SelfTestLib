@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AdCountDownView">
+        <attr name="AD_Time" format="integer"/>
+        <attr name="If_Need_Text" format="boolean"/>
+        <attr name="Radius" format="dimension"/>
+        <attr name="Flag" format="integer"/>
+
+        <attr name="Text_Color" format="color"/>
+        <attr name="Text_Size" format="dimension"/>
+        <attr name="StrokeCircleColor" format="color"/>
+        <attr name="SolidCircleColor" format="color"/>
+        <attr name="StrokeWidth" format="dimension"/>
+
+    </declare-styleable>
+</resources>
