@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity implements AdCountDownView.A
         adCountDownView.anim();
     }
     public void strokeCircleColor(View view){
-        adCountDownView.setmStrokeCircleColor(Color.YELLOW);
+        adCountDownView.setmStrokeCircleColor(Color.RED);
         adCountDownView.anim();
     }
     public void textSize(View view){
