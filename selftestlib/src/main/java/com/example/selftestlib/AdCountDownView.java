@@ -145,7 +145,7 @@ public class AdCountDownView extends View implements Animator.AnimatorListener {
     public void anim(){
         progress = 0;
         ObjectAnimator animator = ObjectAnimator.ofFloat(this, "progress", 0, 360);
-        animator.setDuration(5000);
+        animator.setDuration(adTime*1000L);
         animator.setInterpolator(new LinearInterpolator());
         animator.addListener(this);
         animator.start();
