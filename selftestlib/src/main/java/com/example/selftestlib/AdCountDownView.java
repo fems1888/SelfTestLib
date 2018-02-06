@@ -32,6 +32,11 @@ public class AdCountDownView extends View implements Animator.AnimatorListener {
      */
     boolean ifNeedTextSec;
 
+    /**
+     * 需要的文字 默认是秒 可以自定义
+     */
+    String needTextStr = "秒";
+
     float radius = AdUtil.dpToPixel(40);
 
     /**
@@ -128,8 +133,7 @@ public class AdCountDownView extends View implements Animator.AnimatorListener {
         strokePaint.reset();
         strokePaint.setColor(mTextColor);
         strokePaint.setTextSize(mTextSize);
-        Log.e("=====",AdUtil.getCurrentSecond(adTime,progress)+"");
-        String text = ifNeedTextSec?AdUtil.formatString(AdUtil.getCurrentSecond(adTime,progress),"秒"):AdUtil.formatString(AdUtil.getCurrentSecond(adTime,progress));
+        String text = ifNeedTextSec?AdUtil.formatString(AdUtil.getCurrentSecond(adTime,progress),needTextStr):AdUtil.formatString(AdUtil.getCurrentSecond(adTime,progress));
 
         float measureText = strokePaint.measureText(text);
 
@@ -267,4 +271,11 @@ public class AdCountDownView extends View implements Animator.AnimatorListener {
         this.ifNeedTextSec = ifNeedTextSec;
     }
 
+    public String getNeedTextStr() {
+        return needTextStr;
+    }
+
+    public void setNeedTextStr(String needTextStr) {
+        this.needTextStr = needTextStr;
+    }
 }
