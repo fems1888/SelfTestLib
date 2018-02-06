@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#002A65"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.example.selftestlib.AdCountDownView
+        android:id="@+id/ad"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="#40000000"
+        app:Flag="1"
+        app:AD_Time="7"
+        app:StrokeCircleColor="@color/test"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="空心"
+        android:onClick="stroke"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="实心"
+        android:onClick="solid"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="外圆颜色"
+        android:onClick="strokeCircleColor"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="字体大小"
+        android:onClick="textSize"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="半径50"
+        android:onClick="radius"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="带中文 秒"
+        android:onClick="sec"/>
 
 </LinearLayout>

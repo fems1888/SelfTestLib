@@ -1,15 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="AdCountDownView">
+        <!--控制广告时间-->
         <attr name="AD_Time" format="integer"/>
+
+        <!--是否需要显示文字 eg：是3秒 还是3-->
         <attr name="If_Need_Text" format="boolean"/>
+
+        <!--动画圆的半径-->
         <attr name="Radius" format="dimension"/>
+
+        <!--控制view是有背景还是没有背景 0：无背景  1 ：有背景-->
         <attr name="Flag" format="integer"/>
 
+        <!--倒计时文字的颜色-->
         <attr name="Text_Color" format="color"/>
+
+        <!--倒计时文字的大小-->
         <attr name="Text_Size" format="dimension"/>
+
+        <!--动画圆的颜色-->
         <attr name="StrokeCircleColor" format="color"/>
+
+        <!--背景圆的颜色-->
         <attr name="SolidCircleColor" format="color"/>
+
+        <!--动画圆的描边宽度-->
         <attr name="StrokeWidth" format="dimension"/>
 
     </declare-styleable>
