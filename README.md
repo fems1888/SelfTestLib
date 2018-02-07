@@ -85,6 +85,9 @@ XML布局
 
         <!--动画圆的描边宽度-->
         <attr name="StrokeWidth" format="dimension"/>
+	
+	<!--是否有间隙-->
+        <attr name="hasGap" format="boolean"/>
 
     </declare-styleable>
 ```
@@ -113,7 +116,7 @@ allprojects {
 Step 2. Add the dependency
 ```java
 dependencies {
-	        compile 'com.github.fems1888:SelfTestLib:1.0.3'
+	        compile 'com.github.fems1888:SelfTestLib:1.0.4'
 	}
 ```
 
