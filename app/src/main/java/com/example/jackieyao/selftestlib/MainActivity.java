@@ -52,6 +52,10 @@ public class MainActivity extends AppCompatActivity implements AdCountDownView.A
         adCountDownView.setmTextColor(Color.RED);
         adCountDownView.anim();
     }
+    public void gap(View view){
+        adCountDownView.setHasGap(false);
+        adCountDownView.anim();
+    }
 
     @Override
     public void animEnd() {

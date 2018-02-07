@@ -16,47 +16,63 @@
         app:hasGap="false"
         app:StrokeCircleColor="@color/test"/>
 
-
-    <Button
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="空心"
-        android:onClick="stroke"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="实心"
-        android:onClick="solid"/>
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="空心"
+                android:onClick="stroke"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="实心"
+                android:onClick="solid"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="外圆颜色"
-        android:onClick="strokeCircleColor"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="外圆颜色"
+                android:onClick="strokeCircleColor"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="字体大小"
-        android:onClick="textSize"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="字体大小"
+                android:onClick="textSize"/>
 
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="半径50"
-        android:onClick="radius"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="半径50"
+                android:onClick="radius"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="带中文 秒"
-        android:onClick="sec"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="带中文 秒"
+                android:onClick="sec"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="文字颜色"
-        android:onClick="color"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="文字颜色"
+                android:onClick="color"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="没有间隙"
+                android:onClick="gap"/>
+        </LinearLayout>
+    </ScrollView>
+
+
 
 </LinearLayout>
