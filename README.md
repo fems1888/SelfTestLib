@@ -3,6 +3,7 @@
 * 相信大部分app都会有启动页的倒计时view 所以自己做了一个
 * 目前只是第一版本，后续会继续完善
 * ![](http://g.recordit.co/fnI3LDfymW.gif)
+* ![](http://g.recordit.co/YGzmPxRcE0.gif)
 
 项目链接 [AdCountDownView](https://github.com/fems1888/SelfTestLib)
 ===
