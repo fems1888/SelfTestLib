@@ -13,7 +13,6 @@
         android:background="#40000000"
         app:Flag="1"
         app:AD_Time="7"
-        app:hasGap="false"
         app:StrokeCircleColor="@color/test"/>
 
     <ScrollView
