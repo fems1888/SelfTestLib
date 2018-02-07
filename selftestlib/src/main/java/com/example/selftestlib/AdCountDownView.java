@@ -33,6 +33,11 @@ public class AdCountDownView extends View implements Animator.AnimatorListener {
     boolean ifNeedTextSec;
 
     /**
+     * 是否有间隙 默认是有间隙的
+     */
+    boolean hasGap = true;
+
+    /**
      * 需要的文字 默认是秒 可以自定义
      */
     String needTextStr = "秒";
@@ -96,6 +101,7 @@ public class AdCountDownView extends View implements Animator.AnimatorListener {
         mStrokeCircleColor = ta.getColor(R.styleable.AdCountDownView_StrokeCircleColor,Color.RED);
         mSolidCircleColor = ta.getColor(R.styleable.AdCountDownView_SolidCircleColor,Color.GRAY);
         strokeWidth = ta.getDimensionPixelSize(R.styleable.AdCountDownView_StrokeWidth,10);
+        hasGap = ta.getBoolean(R.styleable.AdCountDownView_hasGap,true);
 
 
         ta.recycle();
@@ -112,8 +118,12 @@ public class AdCountDownView extends View implements Animator.AnimatorListener {
         if (flag == STROKE){
             drawStroke(canvas,centerX,centerY);
         }else if (flag == SOLID){
-            solidPaint.setStyle(Paint.Style.FILL);
+            solidPaint.setStyle(Paint.Style.FILL_AND_STROKE);
             solidPaint.setColor(mSolidCircleColor);
+            if (!hasGap){
+
+                solidPaint.setStrokeWidth(strokeWidth);
+            }
             canvas.drawCircle(centerX,centerY,radius - strokeWidth,solidPaint);
             drawStroke(canvas,centerX,centerY);
         }
@@ -277,5 +287,13 @@ public class AdCountDownView extends View implements Animator.AnimatorListener {
 
     public void setNeedTextStr(String needTextStr) {
         this.needTextStr = needTextStr;
+    }
+
+    public boolean isHasGap() {
+        return hasGap;
+    }
+
+    public void setHasGap(boolean hasGap) {
+        this.hasGap = hasGap;
     }
 }

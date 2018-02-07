@@ -48,6 +48,10 @@ public class MainActivity extends AppCompatActivity implements AdCountDownView.A
         adCountDownView.setIfNeedTextSec(true);
         adCountDownView.anim();
     }
+    public void color(View view){
+        adCountDownView.setmTextColor(Color.RED);
+        adCountDownView.anim();
+    }
 
     @Override
     public void animEnd() {

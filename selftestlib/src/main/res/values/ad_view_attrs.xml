@@ -28,5 +28,8 @@
         <!--动画圆的描边宽度-->
         <attr name="StrokeWidth" format="dimension"/>
 
+        <!--是否有间隙-->
+        <attr name="hasGap" format="boolean"/>
+
     </declare-styleable>
 </resources>
