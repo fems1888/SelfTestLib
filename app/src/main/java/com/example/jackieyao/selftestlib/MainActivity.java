@@ -3,13 +3,20 @@ package com.example.jackieyao.selftestlib;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
 import com.example.selftestlib.AdCountDownView;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class MainActivity extends AppCompatActivity implements AdCountDownView.AnimEndCallBack {
     AdCountDownView adCountDownView;
+    private String startTime = "2018-02-08 15:02:00";
+    private String endTime = "2018-02-14 15:02:00";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,8 +25,41 @@ public class MainActivity extends AppCompatActivity implements AdCountDownView.A
         adCountDownView.setEndCallBack(this);
         adCountDownView.setNeedTextStr("s");
 //        adCountDownView.setNeedTextStr("秒");
+
+
+
+        test();
     }
 
+    private void test() {
+
+        Log.e("*******",byTimeGetSingle("2018-02-08")+"");
+        Log.e("*******==",byTimeGetSingle("2018-2-8")+"");
+         long start = byTimeGetSingle(startTime.split(" ")[0]);
+         long end = byTimeGetSingle(endTime.split(" ")[0]);
+         long day = (24L*60*60*1000L);
+         for (long i = start;i<=end;i=i+day){
+             Log.e("&&&&",byMillsecondsToSingleFormat(i));
+         }
+
+    }
+    public static long byTimeGetSingle(String time){
+        //Date或者String转化为时间戳
+        SimpleDateFormat format =  new SimpleDateFormat("yyyy-MM-dd");
+        Date date = null;
+        try {
+            date = format.parse(time);
+        } catch (ParseException e) {
+            return System.currentTimeMillis();
+        }
+        return date.getTime();
+    }
+
+    public static String byMillsecondsToSingleFormat(long millseconds) {
+        SimpleDateFormat sf = new SimpleDateFormat("yyyy-M-d");
+        Date d = new Date(millseconds);
+        return sf.format(d);
+    }
 
     public void stroke(View view){
         adCountDownView.setFlag(AdCountDownView.STROKE);

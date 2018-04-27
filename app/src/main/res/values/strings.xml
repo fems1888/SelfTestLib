@@ -1,3 +1,470 @@
 <resources>
     <string name="app_name">SelfTestLib</string>
+
+    <!--埋点需求-->
+    <!-- 0100 - APP启动 -->
+    <string name="report_information_001">0100</string>
+
+    <!-- 0405 —  点击助记词排序 -->
+    <string name="report_information_002">0405</string>
+
+    <!-- 0404 —  点击抄写助记词页面下一步按钮 -->
+    <string name="report_information_003">0404</string>
+
+    <!-- 0203 - 添加好友成功 -->
+    <string name="report_information_004">0203</string>
+    <!-- 0204 - 添加群成功 -->
+    <string name="report_information_005">0204</string>
+
+    <!-- 0202 — 点击一条群组消息 -->
+    <string name="report_information_006">0202</string>
+
+    <!-- 0201 — 点击一条单聊消息 -->
+    <string name="report_information_007">0201</string>
+
+    <!-- 0401 — 点击创建钱包按钮 -->
+    <string name="report_information_008">0401</string>
+
+    <!-- 0413 - 助记词导入成功（本钱包的用户）-->
+    <string name="report_information_009">0413</string>
+
+    <!-- 0409 — 重新确认（未在本钱包使用过，并助记词不在词库里） -->
+    <string name="report_information_010">0409</string>
+
+    <!-- 0410 — 继续导入（未在本钱包使用过，并是助记词是词库里的单词）-->
+    <string name="report_information_011">0410</string>
+
+    <!-- 0414 - 二维码导入成功（本钱包的用户） -->
+    <string name="report_information_012">0414</string>
+
+    <!-- 0406 — 进入首页 -->
+    <string name="report_information_013">0406</string>
+
+    <!-- 0200 - 社交 -->
+    <string name="report_information_014">0200</string>
+
+    <!-- 0301 — 点击发现 tab -->
+    <string name="report_information_015">0301</string>
+
+    <!-- 0303 — 点击行情 Cell -->
+    <string name="report_information_016">0303</string>
+
+    <!-- 0302 — 点击资讯 Cell -->
+    <string name="report_information_017">0302</string>
+
+    <!-- 0304 — 点击活动 Cell -->
+    <string name="report_information_018">0304</string>
+
+    <!-- 0305 — 点击 Dapp Cell -->
+    <string name="report_information_019">0305</string>
+
+    <!-- 0306 — 点击小游戏 -->
+    <string name="report_information_020">0306</string>
+
+    <!-- 0114 — 点击首页代币 -->
+    <string name="report_information_021">0114</string>
+
+    <!-- 0101 — 点击钱包 tab -->
+    <string name="report_information_022">0101</string>
+
+    <!-- 0102 — 点击首页扫一扫 -->
+    <string name="report_information_023">0102</string>
+
+    <!-- 0106 — 点击首页二维码 -->
+    <string name="report_information_024">0106</string>
+
+    <!-- 0107 — 点击首页红包中心 -->
+    <string name="report_information_025">0107</string>
+
+    <!-- 0110 — 点击红包中心交易记录 -->
+    <string name="report_information_026">0110</string>
+
+    <!-- 0108 — 点击红包中心充值 -->
+    <string name="report_information_027">0108</string>
+
+    <!-- 0109 — 点击红包中心提现 -->
+    <string name="report_information_028">0109</string>
+
+    <!-- 0501 - 转账地址 -->
+    <string name="report_information_029">0501</string>
+
+    <!-- 0502 - ／转账 -->
+    <string name="report_information_030">0502</string>
+
+    <!-- 0105 — 扫一扫进入添加群组 -->
+    <string name="report_information_031">0105</string>
+
+    <!-- 0104 — 扫一扫进入添加好友 -->
+    <string name="report_information_032">0104</string>
+
+    <!-- 0402 — 点击答题 -->
+    <string name="report_information_033">0402</string>
+
+    <!-- 0403 — 点击创建钱包按钮 -->
+    <string name="report_information_034">0403</string>
+
+    <!-- 0407 — 点击导入钱包按钮 -->
+    <string name="report_information_035">0407</string>
+
+    <!-- 0119 — 用户选择手续费 -->
+    <string name="report_information_036">0119</string>
+
+    <!-- 0118 — 点击转账页面转账按钮 -->
+    <string name="report_information_037">0118</string>
+
+    <!-- 0111 — 转账页面转账完成 -->
+    <string name="report_information_038">0111</string>
+
+    <!-- 0116 — 点击交易记录页面转账按钮 -->
+    <string name="report_information_039">0116</string>
+
+    <!-- 0115 — 点击交易记录页面收款按钮 -->
+    <string name="report_information_040">0115</string>
+
+    <!-- 0117 — 点击交易记录详情 -->
+    <string name="report_information_041">0117</string>
+
+    <!-- 0112 — 点击添加好友按钮 -->
+    <string name="report_information_042">0112</string>
+
+    <!-- 0113 — 点击添加群按钮 -->
+    <string name="report_information_043">0113</string>
+
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
+    <!-- 新增的埋点需求-->
+    <!--登录页面-点击语言设置按钮-->
+    <string name="event_id_1001">1001</string>
+
+    <!--登录页面-语言设置-点击语言-->
+    <string name="event_id_1002">1002</string>
+
+    <!--登录页面-点击创建钱包-->
+    <string name="event_id_1003">1003</string>
+
+
+    <!--登录页面-点击导入钱包-->
+    <string name="event_id_1004">1004</string>
+
+
+    <!--钱包-点击单条公告-->
+    <string name="event_id_1005">1005</string>
+
+
+    <!--钱包-点击公告列表-->
+    <string name="event_id_1006">1006</string>
+
+    <!--钱包-点击Q包-->
+    <string name="event_id_1008">1008</string>
+
+    <!--钱包-进入Q包-点击充值-->
+    <string name="event_id_1009">1009</string>
+
+    <!--钱包-进入Q包-点击提币-->
+    <string name="event_id_1010">1010</string>
+
+    <!--钱包-进入Q包-进入提币详情-点击全部提取-->
+    <string name="event_id_1011">1011</string>
+
+    <!--钱包-进入Q包-点击交易明细-->
+    <string name="event_id_1012">1012</string>
+
+    <!--钱包-点击QTUM复制地址-->
+    <string name="event_id_1013">1013</string>
+
+    <!--钱包-点击QTUM切换地址-->
+    <string name="event_id_1014">1014</string>
+
+    <!--钱包-QTUM切换地址-点击QTUM地址列表中地址-->
+    <string name="event_id_1015">1015</string>
+
+    <!--钱包-点击QTUM下代币-->
+    <string name="event_id_1016">1016</string>
+
+    <!--钱包-进入QTUM代币详情-点击收款-->
+    <string name="event_id_1017">1017</string>
+
+    <!--钱包-进入QTUM代币详情-点击转账-->
+    <string name="event_id_1018">1018</string>
+
+    <!--钱包-进入QTUM代币详情-点击交易详情-->
+    <string name="event_id_1019">1019</string>
+
+    <!--钱包-进入QTUM代币详情-进入某个交易详情-点击复制发款方地址-->
+    <string name="event_id_1020">1020</string>
+
+    <!--钱包-进入QTUM代币详情-进入某个交易详情-点击复制收款方地址-->
+    <string name="event_id_1021">1021</string>
+
+    <!--钱包-进入QTUM代币详情-进入某个交易详情-点击订单号-->
+    <string name="event_id_1022">1022</string>
+
+
+    <!--钱包-点击ETH下代币-->
+    <string name="event_id_1024">1024</string>
+
+    <!--钱包-进入ETH代币详情-点击收款-->
+    <string name="event_id_1025">1025</string>
+
+    <!--钱包-进入ETH代币详情-点击转账-->
+    <string name="event_id_1026">1026</string>
+
+    <!--钱包-进入ETH代币详情-点击交易详情-->
+    <string name="event_id_1027">1027</string>
+
+    <!--钱包-进入ETH代币详情-进入某个交易详情-点击复制发款方地址-->
+    <string name="event_id_1028">1028</string>
+
+    <!--钱包-进入ETH代币详情-进入某个交易详情-点击复制收款方地址-->
+    <string name="event_id_1029">1029</string>
+
+    <!--钱包-进入ETH代币详情-进入某个交易详情-点击订单号-->
+    <string name="event_id_1030">1030</string>
+
+
+
+    <!--社交-消息-群聊里-点击用户头像-->
+    <string name="event_id_1033">1033</string>
+
+    <!--社交-消息-群聊里-查看某个用户信息-点击加好友-->
+    <string name="event_id_1034">1034</string>
+
+
+    <!--社交-消息-群聊里-查看某个用户信息-点击移除该群-->
+    <string name="event_id_1035">1035</string>
+
+    <!--社交-消息-群聊里-点击群信息-->
+    <string name="event_id_1036">1036</string>
+
+    <!--社交-消息-群聊里-点击群公告-->
+    <string name="event_id_1037">1037</string>
+
+    <!--社交-点击官方客服-->
+    <string name="event_id_1038">1038</string>
+
+    <!--社交-消息-点击删除消息-->
+    <string name="event_id_1039">1039</string>
+
+    <!--社交-点击官方群-->
+    <string name="event_id_1040">1040</string>
+
+    <!--社交-查看官方群-点击某个官方群-->
+    <string name="event_id_1041">1041</string>
+
+    <!--社交-查看官方群-点击添加-->
+    <string name="event_id_1042">1042</string>
+
+    <!--社交-点击火热群-->
+    <string name="event_id_1043">1043</string>
+
+    <!--社交-查看火热群-点击某个火热群-->
+    <string name="event_id_1044">1044</string>
+
+    <!--社交-查看火热群-点击添加-->
+    <string name="event_id_1045">1045</string>
+
+    <!--社交-群组-点击某群-->
+    <string name="event_id_1046">1046</string>
+
+    <!--社交-通讯录-点击某个好友-->
+    <string name="event_id_1047">1047</string>
+
+    <!--社交-加号按钮-点击扫一扫-->
+    <string name="event_id_1048">1048</string>
+
+    <!--社交-群组-点击搜索群-->
+    <string name="event_id_1049">1049</string>
+
+    <!--社交-群组-搜索群-点击搜索内容-->
+    <string name="event_id_1050">1050</string>
+
+    <!--社交-群组-搜索群-搜索内容-点击加入该群-->
+    <string name="event_id_1051">1051</string>
+
+    <!--社交-加号按钮-点击搜索群-->
+    <string name="event_id_1052">1052</string>
+
+
+    <!--社交-通讯录-点击搜索好友-->
+    <string name="event_id_1055">1055</string>
+
+    <!--社交-通讯录-搜索好友-点击搜索内容-->
+    <string name="event_id_1056">1056</string>
+
+
+    <!--社交-加号按钮-点击创建群-->
+    <string name="event_id_1061">1061</string>
+
+
+    <!--发现-行情-点击分享（图片）-->
+    <string name="event_id_1063">1063</string>
+
+    <!--发现-点击币月历-->
+    <string name="event_id_1064">1064</string>
+
+    <!--发现-币月历-点击日历-->
+    <string name="event_id_1065">1065</string>
+
+    <!--发现-币月历-点击分享-->
+    <string name="event_id_1066">1066</string>
+
+
+
+    <!--发现-点击量子中文网-->
+    <string name="event_id_1068">1068</string>
+
+    <!--发现-点击以太中文网-->
+    <string name="event_id_1069">1069</string>
+
+
+    <!--我的-点击导出钱包-->
+    <string name="event_id_1074">1074</string>
+
+    <!--我的-点击帮助中心-->
+    <string name="event_id_1075">1075</string>
+
+    <!--我的-帮助中心-点击意见反馈-->
+    <string name="event_id_1076">1076</string>
+
+    <!--我的-点击官方客服-->
+    <string name="event_id_1077">1077</string>
+
+    <!--我的-设置-语言设置-点击语言-->
+    <string name="event_id_1078">1078</string>
+
+    <!--我的-设置-点击钱包偏好设置-->
+    <string name="event_id_1079">1079</string>
+
+    <!--我的-设置-点击消息通知设置-->
+    <string name="event_id_1080">1080</string>
+
+    <!--我的-设置-点击注销账号-->
+    <string name="event_id_1081">1081</string>
+
+    <!--我的-设置-注销账号-点击立即备份-->
+    <string name="event_id_1082">1082</string>
+
+    <!--我的-设置-注销账号-点击注销帐号-->
+    <string name="event_id_1083">1083</string>
+
+    <!--我的-点击分享邀请码-->
+    <string name="event_id_1084">1084</string>
+
+    <!--我的-分享邀请码-点击分享-->
+    <string name="event_id_1085">1085</string>
+
+    <!--发现-活动-点击每日答题分享-->
+    <string name="event_id_1086">1086</string>
+
+    <!--发现-活动-点击竞猜小游戏分享-->
+    <string name="event_id_1087">1087</string>
+
+
+    <!--登录页面-创建钱包-答题页面-点击答题完毕（上传第一道题）-->
+    <string name="event_id_1088">1088</string>
+
+    <!--登录页面-创建钱包-答题页面-点击答题完毕（上传第二道题）-->
+    <string name="event_id_1089">1089</string>
+
+
+    <!--登录页面-创建钱包-答题页面-创建钱包填写信息页面-点击创建成功（要成功的事件）-->
+    <string name="event_id_1090">1090</string>
+
+    <!--登录页面-创建钱包-答题页面-创建钱包填写信息页面-点击创建成功（填写邀请码成功的事件）-->
+    <string name="event_id_1091">1091</string>
+
+
+    <!--登录页面-创建钱包-答题页面-创建钱包填写信息页面-本页面创建成功-排序-点击确定（要排序成功的事件)-->
+    <string name="event_id_1092">1092</string>
+
+
+    <!--登录页面-导入钱包-点击导入钱包按钮（要导入成功的事件）-->
+    <string name="event_id_1093">1093</string>
+
+
+    <!--登录页面-导入钱包-二维码导入-使用扫一扫功能（要成功扫出的事件）-->
+    <string name="event_id_1094">1094</string>
+
+
+    <!--登录页面-导入钱包-二维码导入-点击扫一扫中相册（点击事件)-->
+    <string name="event_id_1095">1095</string>
+
+
+    <!--登录页面-导入钱包-二维码导入-点击扫一扫中相册（扫描成功事件)-->
+    <string name="event_id_1096">1096</string>
+
+
+
+    <!--登录页面-导入钱包-二维码导入-点击开始导入（要成功的事件）-->
+    <string name="event_id_1097">1097</string>
+
+
+    <!--点击扫描里的相册-->
+    <string name="event_id_1098">1098</string>
+
+    <!--扫一扫 支付-->
+    <string name="event_id_1099">1099</string>
+
+    <!--扫一扫 其他-->
+    <string name="event_id_1100">1100</string>
+
+    <!--扫一扫 转账-->
+    <string name="event_id_1101">1101</string>
+
+
+    <!--支付界面 点击支付按钮-->
+    <string name="event_id_1102">1102</string>
+
+    <!--支付界面 支付成功-->
+    <string name="event_id_1103">1103</string>
+
+    <!--支付界面 支付失败-->
+    <string name="event_id_1104">1104</string>
+
+    <!--进入Q包-进入充值详情 点击确认支付-->
+    <string name="event_id_1105">1105</string>
+
+    <!--进入Q包-进入充值详情 点击确认支付成功事件-->
+    <string name="event_id_1106">1106</string>
+
+    <!--进入Q包-进入提币详情 点击确认提币-->
+    <string name="event_id_1107">1107</string>
+
+    <!--进入Q包-进入提币详情 点击确认提币成功事件-->
+    <string name="event_id_1108">1108</string>
+
+
+
+    <!--进入QTUM代币详情-代币转账页面 弹框点击确认事件-->
+    <string name="event_id_1109">1109</string>
+
+    <!--进入QTUM代币详情-代币转账页面 弹框点击确认成功事件-->
+    <string name="event_id_1110">1110</string>
+
+    <!--进入QTUM代币详情-代币转账页面 弹框点击确认失败事件-->
+    <string name="event_id_1111">1111</string>
+
+
+    <!--进ETH代币详情-代币转账页面 弹框点击确认事件-->
+    <string name="event_id_1112">1112</string>
+
+    <!--进入ETH代币详情-代币转账页面 弹框点击确认成功事件-->
+    <string name="event_id_1113">1113</string>
+
+    <!--进入ETH代币详情-代币转账页面 弹框点击确认失败事件-->
+    <string name="event_id_1114">1114</string>
+
+
+    <!--社交-加号按钮-创建群成功事件-->
+    <string name="event_id_1115">1115</string>
+
+    <!--帮助中心-点击意见反馈-点击提交反馈事件-->
+    <string name="event_id_1116">1116</string>
+
+    <!--帮助中心-点击意见反馈-点击提交反馈成功事件-->
+    <string name="event_id_1117">1117</string>
+
+    <!--群详情-群二维码-点击分享群二维码-->
+    <string name="event_id_1118">1118</string>
 </resources>
